@@ -43,7 +43,7 @@ pip install opencv-python mediapipe numpy
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-username/air-canvas.git
+git clone https://github.com/PatrickAsaad1/Virtual-Whiteboard.git
 cd air-canvas
 
 # 2. (Optional) Create a virtual environment

@@ -44,17 +44,17 @@ pip install opencv-python mediapipe numpy
 ```bash
 # 1. Clone the repo
 git clone https://github.com/PatrickAsaad1/Virtual-Whiteboard.git
-cd air-canvas
+cd Virtual-Whiteboard
 
 # 2. (Optional) Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # 3. Install dependencies
-pip install opencv-python mediapipe numpy
+python -m pip install -r requirements.txt / pip install requirements.txt
 
 # 4. Run
-python air_canvas.py
+python Main.py
 ```
 
 ---
@@ -102,26 +102,9 @@ A finger is considered **"up"** when its tip Y-coordinate is above (less than) i
 
 ---
 
-## Project Structure
-
-```
-air-canvas/
-├── air_canvas.py          # Main application
-├── hand_landmarker.task   # Auto-downloaded model (gitignored)
-└── README.md
-```
-
-Add `hand_landmarker.task` to your `.gitignore`:
-
-```
-hand_landmarker.task
-```
-
----
-
 ## Configuration
 
-You can tweak these values directly in `air_canvas.py`:
+You can tweak these values directly in `Main.py`:
 
 | Variable      | Default       | Description                     |
 | ------------- | ------------- | ------------------------------- |

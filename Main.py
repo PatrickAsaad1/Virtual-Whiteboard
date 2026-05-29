@@ -99,7 +99,7 @@ while True:
             # --- Cycle color on open hand ---
             if all_fingers_up:
                 if time.time() - last_color_change_time > 0.5:  # 0.5 sec delay
-                    color_idx = (color_idx + 1) % 5
+                    color_idx = (color_idx + 1) % len(PALETTE)
                     last_color_change_time = time.time()
                     print(f"Color: {PALETTE[color_idx][0]}")
 
